@@ -1,0 +1,400 @@
+package PackageOne;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.JCheckBox;
+import javax.swing.JEditorPane;
+import java.awt.SystemColor;
+
+public class SimpleMultiQuestionExamPracticeTool {
+
+	private JFrame frmH;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					SimpleMultiQuestionExamPracticeTool window = new SimpleMultiQuestionExamPracticeTool();
+					window.frmH.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public SimpleMultiQuestionExamPracticeTool() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmH = new JFrame();
+		frmH.getContentPane().setBackground(new Color(240, 240, 240));
+		frmH.setResizable(false);
+		frmH.getContentPane().setForeground(new Color(0, 0, 0));
+		frmH.setTitle("Simple Multiple Question Exam Practicing Tool");
+		frmH.setBounds(100, 100, 693, 651);
+		frmH.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmH.getContentPane().setLayout(null);
+		
+		//LABLES START HERE
+		
+		JLabel lblWelcomeToThe = new JLabel("Welcome to the SMQEPT");
+		lblWelcomeToThe.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblWelcomeToThe.setBounds(10, 11, 253, 23);
+		frmH.getContentPane().add(lblWelcomeToThe);
+		
+		JLabel lblQuestions = new JLabel("Questions and answers");
+		lblQuestions.setBackground(new Color(0, 0, 0));
+		lblQuestions.setForeground(new Color(0, 0, 0));
+		lblQuestions.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblQuestions.setBounds(10, 36, 166, 23);
+		frmH.getContentPane().add(lblQuestions);
+		
+		JLabel label = new JLabel("1");
+		label.setBounds(10, 65, 24, 14);
+		frmH.getContentPane().add(label);
+		
+		JLabel label_1 = new JLabel("2");
+		label_1.setBounds(10, 95, 24, 14);
+		frmH.getContentPane().add(label_1);
+		
+		JLabel label_2 = new JLabel("3");
+		label_2.setBounds(10, 125, 24, 14);
+		frmH.getContentPane().add(label_2);
+		
+		JLabel label_3 = new JLabel("4");
+		label_3.setBounds(10, 155, 24, 14);
+		frmH.getContentPane().add(label_3);
+		
+		JLabel label_4 = new JLabel("5");
+		label_4.setBounds(10, 185, 24, 14);
+		frmH.getContentPane().add(label_4);
+		
+		JLabel label_5 = new JLabel("6");
+		label_5.setBounds(10, 215, 24, 14);
+		frmH.getContentPane().add(label_5);
+		
+		JLabel label_6 = new JLabel("7");
+		label_6.setBounds(10, 245, 24, 14);
+		frmH.getContentPane().add(label_6);
+		
+		JLabel label_7 = new JLabel("8");
+		label_7.setBounds(10, 275, 24, 14);
+		frmH.getContentPane().add(label_7);
+		
+		JLabel label_8 = new JLabel("9");
+		label_8.setBounds(10, 305, 24, 14);
+		frmH.getContentPane().add(label_8);
+		
+		JLabel label_9 = new JLabel("10");
+		label_9.setBounds(10, 335, 24, 14);
+		frmH.getContentPane().add(label_9);
+		
+		JLabel label_11 = new JLabel("11");
+		label_11.setBounds(10, 365, 24, 14);
+		frmH.getContentPane().add(label_11);
+		
+		JLabel label_10 = new JLabel("12");
+		label_10.setBounds(10, 395, 24, 14);
+		frmH.getContentPane().add(label_10);
+		
+		JLabel label_12 = new JLabel("13");
+		label_12.setBounds(10, 425, 24, 14);
+		frmH.getContentPane().add(label_12);
+		
+		JLabel label_13 = new JLabel("14");
+		label_13.setBounds(10, 455, 24, 14);
+		frmH.getContentPane().add(label_13);
+		
+		JLabel label_14 = new JLabel("15");
+		label_14.setBounds(10, 485, 24, 14);
+		frmH.getContentPane().add(label_14);
+		
+		//LABLES END HERE, NOW YOU ARE ENTERING THE CHECKBOX ZONE
+		
+		JCheckBox chckbxA = new JCheckBox("A");
+		chckbxA.setBounds(40, 61, 49, 23);
+		frmH.getContentPane().add(chckbxA);
+		
+		JCheckBox chckbxB = new JCheckBox("B");
+		chckbxB.setBounds(102, 61, 49, 23);
+		frmH.getContentPane().add(chckbxB);
+		
+		JCheckBox chckbxC = new JCheckBox("C");
+		chckbxC.setBounds(164, 61, 49, 23);
+		frmH.getContentPane().add(chckbxC);
+		
+		JCheckBox chckbxD = new JCheckBox("D");
+		chckbxD.setBounds(226, 61, 49, 23);
+		frmH.getContentPane().add(chckbxD);
+		
+		JCheckBox chckbxA_1 = new JCheckBox("A");
+		chckbxA_1.setBounds(40, 91, 49, 23);
+		frmH.getContentPane().add(chckbxA_1);
+		
+		JCheckBox chckbxB_1 = new JCheckBox("B");
+		chckbxB_1.setBounds(102, 91, 49, 23);
+		frmH.getContentPane().add(chckbxB_1);
+		
+		JCheckBox chckbxC_1 = new JCheckBox("C");
+		chckbxC_1.setBounds(164, 91, 49, 23);
+		frmH.getContentPane().add(chckbxC_1);
+		
+		JCheckBox chckbxD_1 = new JCheckBox("D");
+		chckbxD_1.setBounds(226, 91, 49, 23);
+		frmH.getContentPane().add(chckbxD_1);
+		
+		JCheckBox chckbxA_2 = new JCheckBox("A");
+		chckbxA_2.setBounds(40, 121, 49, 23);
+		frmH.getContentPane().add(chckbxA_2);
+		
+		JCheckBox chckbxB_2 = new JCheckBox("B");
+		chckbxB_2.setBounds(102, 121, 49, 23);
+		frmH.getContentPane().add(chckbxB_2);
+		
+		JCheckBox chckbxC_2 = new JCheckBox("C");
+		chckbxC_2.setBounds(164, 121, 49, 23);
+		frmH.getContentPane().add(chckbxC_2);
+		
+		JCheckBox chckbxD_2 = new JCheckBox("D");
+		chckbxD_2.setBounds(226, 121, 43, 23);
+		frmH.getContentPane().add(chckbxD_2);
+		
+		JCheckBox chckbxA_3 = new JCheckBox("A");
+		chckbxA_3.setBounds(40, 151, 49, 23);
+		frmH.getContentPane().add(chckbxA_3);
+		
+		JCheckBox chckbxB_3 = new JCheckBox("B");
+		chckbxB_3.setBounds(102, 151, 49, 23);
+		frmH.getContentPane().add(chckbxB_3);
+		
+		JCheckBox chckbxC_3 = new JCheckBox("C");
+		chckbxC_3.setBounds(164, 151, 49, 23);
+		frmH.getContentPane().add(chckbxC_3);
+		
+		JCheckBox chckbxD_3 = new JCheckBox("D");
+		chckbxD_3.setBounds(226, 151, 43, 23);
+		frmH.getContentPane().add(chckbxD_3);
+		
+		JCheckBox chckbxA_4 = new JCheckBox("A");
+		chckbxA_4.setBounds(40, 181, 49, 23);
+		frmH.getContentPane().add(chckbxA_4);
+		
+		JCheckBox chckbxB_4 = new JCheckBox("B");
+		chckbxB_4.setBounds(102, 181, 49, 23);
+		frmH.getContentPane().add(chckbxB_4);
+		
+		JCheckBox chckbxC_4 = new JCheckBox("C");
+		chckbxC_4.setBounds(164, 181, 49, 23);
+		frmH.getContentPane().add(chckbxC_4);
+		
+		JCheckBox chckbxD_4 = new JCheckBox("D");
+		chckbxD_4.setBounds(226, 181, 43, 23);
+		frmH.getContentPane().add(chckbxD_4);
+		
+		JCheckBox chckbxA_5 = new JCheckBox("A");
+		chckbxA_5.setBounds(40, 211, 49, 23);
+		frmH.getContentPane().add(chckbxA_5);
+		
+		JCheckBox chckbxB_5 = new JCheckBox("B");
+		chckbxB_5.setBounds(102, 211, 49, 23);
+		frmH.getContentPane().add(chckbxB_5);
+		
+		JCheckBox chckbxC_5 = new JCheckBox("C");
+		chckbxC_5.setBounds(164, 211, 49, 23);
+		frmH.getContentPane().add(chckbxC_5);
+		
+		JCheckBox chckbxD_5 = new JCheckBox("D");
+		chckbxD_5.setBounds(226, 211, 43, 23);
+		frmH.getContentPane().add(chckbxD_5);
+		
+		JCheckBox chckbxA_6 = new JCheckBox("A");
+		chckbxA_6.setBounds(40, 241, 49, 23);
+		frmH.getContentPane().add(chckbxA_6);
+		
+		JCheckBox chckbxB_6 = new JCheckBox("B");
+		chckbxB_6.setBounds(102, 241, 49, 23);
+		frmH.getContentPane().add(chckbxB_6);
+		
+		JCheckBox chckbxC_6 = new JCheckBox("C");
+		chckbxC_6.setBounds(164, 241, 49, 23);
+		frmH.getContentPane().add(chckbxC_6);
+		
+		JCheckBox chckbxD_6 = new JCheckBox("D");
+		chckbxD_6.setBounds(226, 241, 43, 23);
+		frmH.getContentPane().add(chckbxD_6);
+		
+		JCheckBox chckbxA_7 = new JCheckBox("A");
+		chckbxA_7.setBounds(40, 271, 49, 23);
+		frmH.getContentPane().add(chckbxA_7);
+		
+		JCheckBox chckbxB_7 = new JCheckBox("B");
+		chckbxB_7.setBounds(102, 271, 43, 23);
+		frmH.getContentPane().add(chckbxB_7);
+		
+		JCheckBox chckbxC_7 = new JCheckBox("C");
+		chckbxC_7.setBounds(164, 271, 49, 23);
+		frmH.getContentPane().add(chckbxC_7);
+		
+		JCheckBox chckbxD_7 = new JCheckBox("D");
+		chckbxD_7.setBounds(226, 271, 49, 23);
+		frmH.getContentPane().add(chckbxD_7);
+		
+		JCheckBox chckbxA_8 = new JCheckBox("A");
+		chckbxA_8.setBounds(40, 301, 49, 23);
+		frmH.getContentPane().add(chckbxA_8);
+		
+		JCheckBox chckbxB_8 = new JCheckBox("B");
+		chckbxB_8.setBounds(102, 301, 49, 23);
+		frmH.getContentPane().add(chckbxB_8);
+		
+		JCheckBox chckbxC_8 = new JCheckBox("C");
+		chckbxC_8.setBounds(164, 301, 49, 23);
+		frmH.getContentPane().add(chckbxC_8);
+		
+		JCheckBox chckbxD_8 = new JCheckBox("D");
+		chckbxD_8.setBounds(226, 301, 49, 23);
+		frmH.getContentPane().add(chckbxD_8);
+		
+		JCheckBox chckbxA_9 = new JCheckBox("A");
+		chckbxA_9.setBounds(40, 331, 49, 23);
+		frmH.getContentPane().add(chckbxA_9);
+		
+		JCheckBox chckbxB_9 = new JCheckBox("B");
+		chckbxB_9.setBounds(102, 331, 49, 23);
+		frmH.getContentPane().add(chckbxB_9);
+		
+		JCheckBox chckbxC_9 = new JCheckBox("C");
+		chckbxC_9.setBounds(164, 331, 49, 23);
+		frmH.getContentPane().add(chckbxC_9);
+		
+		JCheckBox chckbxD_9 = new JCheckBox("D");
+		chckbxD_9.setBounds(226, 331, 43, 23);
+		frmH.getContentPane().add(chckbxD_9);
+		
+		JCheckBox chckbxA_10 = new JCheckBox("A");
+		chckbxA_10.setBounds(40, 361, 49, 23);
+		frmH.getContentPane().add(chckbxA_10);
+		
+		JCheckBox chckbxB_10 = new JCheckBox("B");
+		chckbxB_10.setBounds(102, 361, 49, 23);
+		frmH.getContentPane().add(chckbxB_10);
+		
+		JCheckBox chckbxC_10 = new JCheckBox("C");
+		chckbxC_10.setBounds(164, 361, 49, 23);
+		frmH.getContentPane().add(chckbxC_10);
+		
+		JCheckBox chckbxD_10 = new JCheckBox("D");
+		chckbxD_10.setBounds(226, 361, 49, 23);
+		frmH.getContentPane().add(chckbxD_10);
+		
+		JCheckBox chckbxA_11 = new JCheckBox("A");
+		chckbxA_11.setBounds(40, 391, 49, 23);
+		frmH.getContentPane().add(chckbxA_11);
+		
+		JCheckBox chckbxB_11 = new JCheckBox("B");
+		chckbxB_11.setBounds(102, 391, 43, 23);
+		frmH.getContentPane().add(chckbxB_11);
+		
+		JCheckBox chckbxC_11 = new JCheckBox("C");
+		chckbxC_11.setBounds(164, 391, 49, 23);
+		frmH.getContentPane().add(chckbxC_11);
+		
+		JCheckBox chckbxD_11 = new JCheckBox("D");
+		chckbxD_11.setBounds(226, 391, 43, 23);
+		frmH.getContentPane().add(chckbxD_11);
+		
+		JCheckBox chckbxA_12 = new JCheckBox("A");
+		chckbxA_12.setBounds(40, 421, 49, 23);
+		frmH.getContentPane().add(chckbxA_12);
+		
+		JCheckBox chckbxB_12 = new JCheckBox("B");
+		chckbxB_12.setBounds(102, 421, 49, 23);
+		frmH.getContentPane().add(chckbxB_12);
+		
+		JCheckBox chckbxC_12 = new JCheckBox("C");
+		chckbxC_12.setBounds(164, 421, 49, 23);
+		frmH.getContentPane().add(chckbxC_12);
+		
+		JCheckBox chckbxD_12 = new JCheckBox("D");
+		chckbxD_12.setBounds(226, 421, 49, 23);
+		frmH.getContentPane().add(chckbxD_12);
+		
+		JCheckBox chckbxA_13 = new JCheckBox("A");
+		chckbxA_13.setBounds(40, 451, 49, 23);
+		frmH.getContentPane().add(chckbxA_13);
+		
+		JCheckBox chckbxB_13 = new JCheckBox("B");
+		chckbxB_13.setBounds(102, 451, 49, 23);
+		frmH.getContentPane().add(chckbxB_13);
+		
+		JCheckBox chckbxC_13 = new JCheckBox("C");
+		chckbxC_13.setBounds(164, 451, 49, 23);
+		frmH.getContentPane().add(chckbxC_13);
+		
+		JCheckBox chckbxD_13 = new JCheckBox("D");
+		chckbxD_13.setBounds(226, 451, 49, 23);
+		frmH.getContentPane().add(chckbxD_13);
+		
+		JCheckBox chckbxA_14 = new JCheckBox("A");
+		chckbxA_14.setBounds(40, 481, 49, 23);
+		frmH.getContentPane().add(chckbxA_14);
+		
+		JCheckBox chckbxB_14 = new JCheckBox("B");
+		chckbxB_14.setBounds(102, 481, 49, 23);
+		frmH.getContentPane().add(chckbxB_14);
+		
+		JCheckBox chckbxC_14 = new JCheckBox("C");
+		chckbxC_14.setBounds(164, 481, 49, 23);
+		frmH.getContentPane().add(chckbxC_14);
+		
+		JCheckBox chckbxD_14 = new JCheckBox("D");
+		chckbxD_14.setBounds(226, 481, 49, 23);
+		frmH.getContentPane().add(chckbxD_14);
+		
+		//INSTRUCTIONS
+		
+		JEditorPane dtrpn_Instruction = new JEditorPane();
+		dtrpn_Instruction.setForeground(new Color(0, 0, 0));
+		dtrpn_Instruction.setBackground(SystemColor.control);
+		dtrpn_Instruction.setEditable(false);
+		dtrpn_Instruction.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		dtrpn_Instruction.setText("The SMQEPT is for students who have to study for multiple choice exams or tests."
+				+ "\r\nThe SMQEPT prevents students from wasting paper and damaging\r\ntheir learning materials."
+				+ "\r\n\r\nThere are 15 questions and 4 answers.\r\nUse your learning materials with the SMQEPT to simulate a test."
+				+ "\r\nAfter answering all 15 questions you may check your answer sheet \r\nand grade your test.\r\nWhen you are finished you may close the window."
+				+ "\r\nIf you wish to try again, close the window and run\r\nthe program again.");
+		dtrpn_Instruction.setBounds(290, 45, 388, 244);
+		frmH.getContentPane().add(dtrpn_Instruction);
+	
+	
+		//JButton btnRESET = new JButton("RESET");
+		//btnRESET.addActionListener(new ActionListener() {
+			//public void actionPerformed(ActionEvent e) {
+				//try {
+					//Runtime.getRuntime().exec("java -jar yourapp.jar");
+				//} catch (IOException e1) {					
+				//}
+			     //System.exit(0);
+			//}
+		//});
+		//btnRESET.setBounds(10, 539, 89, 23);
+		//frmH.getContentPane().add(btnRESET);
+	}
+}
+
